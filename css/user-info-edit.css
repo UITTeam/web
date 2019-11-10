@@ -1,7 +1,6 @@
 
 body{
 
-  padding: 0 160px 100px;
   display: grid;
   grid-gap: 20px;
  grid-template-rows: 20% 80%;
