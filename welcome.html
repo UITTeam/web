@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script type="text/javascript" src="js/js_welcome.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <script type="text/javascript" src="js/wow.js"></script>
+	<style type="text/css">
+		body
+		{
+      margin-left: 100px;
+			background: url(img/bg.jpg);
+			background-repeat: no-repeat;
+			background-size:cover;
+			font-family: Comic Sans MS;
+      color: #5E5E5D
+		}
+    h1
+    {
+    font-size: 70px;
+    mix-blend-mode: hard-light;
+    opacity: 0.7;
+    }
+    a
+    {
+       text-decoration: none;
+    }
+    .test-listing {
+   position: relative;
+    }
+
+    .test-list-try {
+
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows:200px 200px;
+    grid-gap: 10px;
+    }
+    .test-list-top {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows:200px 200px;
+    grid-gap: 10px;
+    }
+    .test-image {
+     width: 300px;
+    height: 200px;
+    line-height: 0;
+    overflow: hidden;
+}
+.test-image img {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  transition: -webkit-filter 0.3s ease-in;
+  transition: filter 0.3s ease-in;
+  transition: filter 0.3s ease-in, -webkit-filter 0.3s ease-in;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.test-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90,0,10,0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.test-listing:hover .test-title {
+  opacity: 1;
+  color: white;
+  text-decoration: none;
+}
+
+.test-listing:hover .test-image img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+ 		<div class="row animated fadeInDown ">
+   			 <div class="col-3">
+   			 	<img src="img/wel.png" class="img-fluid" alt="Responsive image">		  
+   			 </div>
+   			 <div class="col-9 ">
+   			 	<h1>WELCOME</h1>
+    			 <div class="text-center">
+    			 	<p>If you already have an account, please...<br> <br>
+  					<a id='login' href="" class="btn btn-outline-dark btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+			   	</div>		 
+   			 </div>	 
+  		</div>
+  		<div class="row">
+   			 <div class="col-md-7" style="background: transparent;">
+           <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4>Try some tests...</h4>
+              <hr align="center" >
+            </div>
+            <div class="panel-body"  data-wow-delay=".4s">
+               <div class="test-list-try animated fadeInDown">
+                <article class="test-listing type1 all">
+                  <a class="test-title" href="#">Remove the Spoon</a>
+                  <div class="test-image">
+                   <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/san-fransisco-768x432.jpg"></a>
+                  </div>
+                </article>
+                <article class="test-listing type1 all">
+                  <a class="test-title" href="#">Postcard: Holiday</a>
+                  <div class="test-image">
+                   <a href="#"><img src="img/5.png"></a>
+                  </div>
+                </article>
+                 <article  class="test-listing type1 all">
+                  <a class="test-title" href="#">Gramma</a>
+                  <div class="test-image">
+                   <a href="#"><img src="img/2.png"></a>
+                  </div>
+                </article>
+                 <article class="test-listing type1 all">
+                  <a class="test-title" href="#">Holiday</a>
+                  <div class="test-image">
+                   <a href="#"><img src="img/6.png"></a>
+                  </div>
+                </article>
+              </div>        
+            </div>
+          </div>		 
+   			 </div>
+   			<div class="col-md-5" style="background: transparent;">
+           <div class="panel panel-default">
+              <div class="panel-heading">
+                 <h4>Top view...</h4>
+                 <hr width="75%" align="left" >
+              </div>
+              <div class="panel-body ">
+                <div class="test-list-top animated fadeInUp" data-wow-delay=".4s">
+                  <article class="test-listing type1 all">
+                    <a class="test-title" href="#">English Grammar</a>
+                    <div class="test-image">
+                       <a href="#"><img src="img/4.png"></a>
+                     </div>
+                   </article>
+                   <article  class="test-listing type1 all">
+                     <a class="test-title" href="#">Postcard: Holiday</a>
+                     <div class="test-image">
+                         <a href="#"><img src="img/8.png"></a>
+                      </div>
+                  </article>   
+                </div>
+              </div>
+          </div>	 
+   			 </div>
+  		</div>
+	</div>
+
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+      		<img src="./img/avt.png">
+     		<h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+      		<button id='close' type="button" class="close" data-dismiss="modal" aria-label="Close">
+       		   <span aria-hidden="true">&times;</span>
+       		</button>
+      </div>
+      <div class="modal-body mx-3">	
+        <form>
+  			<div class="form-group">
+    			<label>Username</label>
+   				 <input type="text" class="form-control" id="username"  placeholder="Enter uername" required value="">
+  				  <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+  			</div>
+  			<div class="form-group">
+   				<label>Password</label>
+    			<input type="password" class="form-control" id="password" placeholder="Password" required value="">
+  			</div>
+  			<div class="form-group form-check">
+   				 <input type="checkbox" class="form-check-input" id="checked">
+  			 	 <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  			</div>
+  			<div class="text-center"> 
+  				<button class="btn btn-dark" id="btnSubmit">Login</button>
+  			</div>
+		</form>
+      </div>
+    </div>
+  </div>
+  </div>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

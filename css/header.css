@@ -1,0 +1,149 @@
+*
+{
+    font-family: Comic Sans MS;
+}
+body
+{
+   background: url('../img/billboard2.jpg') no-repeat;
+    padding: 33px;
+}
+.wrapper
+    {
+        display: grid;
+        grid-template-rows: 30% 60% 10%;
+        grid-gap: 20px;
+    }
+
+header
+{  width: 100%;
+    height: 125px;
+    position: relative;
+     grid-row-start: 1;  
+     grid-row-end: 1;
+}
+.content
+{
+    grid-row-start: 2;  
+    grid-row-end: 2;
+}
+
+.banner h1
+{
+    position: absolute;
+    width: 700px;
+    height: 5px;
+    left: 520px;
+    font-size: 60px;
+    text-align: center;
+    color: rgba(204, 30, 30, 0.88);
+    mix-blend-mode: hard-light;
+    opacity: 0.7;
+}
+.menu-1 a 
+{
+    text-decoration: none;
+    color: #544738;
+    float: left;
+    padding-left: 20px;
+}
+.menu-1 a:hover
+{
+    color: #7eb9be;
+    -webkit-transform: rotate(-5deg) scale(1.4);
+    -moz-transform: rotate(-5deg) scale(1.0);
+    -o-transform: rotate(-5deg) scale(0.9);
+
+}
+
+header li
+{
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #e9d8f4;
+
+}
+
+.menu-1 ul li > .menu-item
+{
+    display: none;
+    padding: 10px;
+
+}
+.banner > a
+{    
+    position: absolute;
+    width: 50px;
+    height: 58px;
+    left: 1250px;
+    top: 10px;
+}
+.banner > img
+{
+    position: absolute;
+    width: 200px;
+    left: 30px;
+    top: -15px;
+    opacity: 0.4;
+}
+
+.banner > p
+{
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    left: 860px;
+    top: 100px;
+    font-size: 15px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.9;
+}
+.home
+{
+    position: absolute;
+    width: 155px;
+    height: 40px;
+    left: 50px;
+    top: 170px;
+    line-height: 33px;
+    color: #000000;
+}
+.test 
+{
+    position: absolute;
+    width: 155px;
+    height: 40px;
+    left: 191px;
+    top: 170px;
+    line-height: 33px;
+    color: #000000;
+}
+.courses
+{
+    position: absolute;
+    width: 240px;
+    height: 40px;
+    left: 346px;
+    top: 170px;
+    line-height: 33px;
+    color: #000000;
+
+}
+.about
+{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 564px;
+    top: 170px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.content
+{
+    position: relative;
+    z-index:1;
+}

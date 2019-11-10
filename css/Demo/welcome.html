@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		body
+		{
+			background: url(img/bg.jpg);
+			background-repeat: no-repeat;
+			background-size:cover;
+			font-family: Comic Sans MS;
+			color: #898989;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$('#btnSubmit').on('click', function(e)
+				{
+					var username = $('#username').val(),
+					pass = $('#password').val(),
+					correct_user= 'admin',
+					correct_pass= 'admin';
+			 if (username === correct_user && pass === correct_pass)
+		  {
+	  		window.open('./test.html');
+		  }
+	  else
+		  {
+		  	e.preventDefault();
+	 	 	swal("Something went wrong!");
+		  }
+	});
+})
+	</script>
+</head>
+<body>
+	<div class="container">
+ 		<div class="row">
+   			 <div class="col-3">
+   			 	<img src="img/wel.png" class="img-fluid" alt="Responsive image">		  
+   			 </div>
+   			 <div class="col-9">
+   			 	<h1 style="font-size: 70px">WELCOME</h1>
+    			 <div class="text-center">
+    			 	<p>If you already have an account, please...<br> <br>
+  					<a href="" class="btn btn-outline-dark btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+				</div>		 
+   			 </div>	 
+  		</div>
+  		<div class="row">
+   			 <div class="col-9" style="background: yellow">
+    			  Test list
+   			 </div>
+   			 <div class="col-3" style="background: red">
+    			  Top view
+   			 </div>
+   			 
+  		</div>
+	</div>
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+      		<img src="./img/avt.png">
+     		<h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       		   <span aria-hidden="true">&times;</span>
+       		</button>
+      </div>
+      <div class="modal-body mx-3">	
+        <form>
+  			<div class="form-group">
+    			<label for="exampleInputEmail1">Email address</label>
+   				 <input type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter email" required value="">
+  				  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  			</div>
+  			<div class="form-group">
+   				<label for="exampleInputPassword1">Password</label>
+    			<input type="password" class="form-control" id="password" placeholder="Password" required value="">
+  			</div>
+  			<div class="form-group form-check">
+   				 <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  			 	 <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  			</div>
+  			<div class="form-group form-submit text-center" > 
+  				<button class="btn btn-dark" id="btnSubmit">Login</button>
+  			</div>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+	<script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
