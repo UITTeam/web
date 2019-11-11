@@ -63,20 +63,11 @@ header li
     background-color: #e9d8f4;
 
 }
-
-.menu-1 ul li > .menu-item
-{
-    display: none;
-    padding: 10px;
-
-}
 .banner > a
 {    
     position: absolute;
-    width: 50px;
-    height: 58px;
-    left: 1250px;
-    top: 10px;
+    right: 40px;
+    top: 20px;
 }
 .banner > img
 {
