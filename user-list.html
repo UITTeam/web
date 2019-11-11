@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/user-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body style="background-size: auto 1300px">
@@ -12,7 +13,7 @@
 		<img src="./img/banner.png">
 		<h1 style="font-weight: bold;" >English Online</h1>
 		<p>Hotline: 012345678 <br>Email: eng@gmail.com</p>
-		<a href="./user_info.html" target="_blank"><img src="./pics/icon_login.png" alt="Profiles" height="60px" width="60px"></a>
+		<a href="./user-info.html" target="_blank"><img src="./img/avt.png" alt="Profiles" height="60px" width="60px"></a>
 		</div>
 		<div  class=menu-1>
 		<ul>
@@ -38,106 +39,78 @@
 	<div class="content">
 		
 		<div class="user_sidebar">
-			<div class="s_tittle"><img src="./pics/icon_login.png" alt="avata" height="60px" width="60px"><i>username</i></div>
+			<div class="s_tittle"><img src="./img/avt.png" alt="avata" height="60px" width="60px"><i>username</i></div>
 			<br>
 			<ul class="menu_user">
-				<li class="info"><a href="#"><b>Thông tin tài khoản</b></a>
+				<li class="info"><a href="user-info.html"><b>Profile</b></a>
 					<ul class="us-item">
-						<li><a href="#">Chỉnh sửa thông tin</a></li>
+						<li><a href="user-info-edit.html">Edit Profile</a></li>
 						
-						<li><a href="#">Đổi mật khẩu</a></li>
+						<li><a href="user-info-password.html">Change Password</a></li>
 					</ul>
 				</li>
 				
-				<li class="list"><a href="#"><b>Danh sách</b></a>
+				<li class="list"><a href="user-list.html"><b>List</b></a>
 					<ul class="us-item">
-						<li><a href="#">Khóa học</a></li>
+						<li><a href="#">Courses</a></li>
 						
-						<li><a href="#">Lớp học</a></li>
+						<li><a href="#">Class</a></li>
 						
-						<li><a href="#">Giáo viên</a></li>
+						<li><a href="#">Teacher</a></li>
 						
-						<li><a href="#">Học viên</a></li>
+						<li><a href="#">Student</a></li>
 					</ul>
 				</li>
 				
-				<li class="KQ"><a href="#"><b>Kết quả</b></a>
+				<li class="KQ"><a href="#"><b>Learning Outcome</b></a>
 					<ul class="us-item">
-						<li><a href="#">Khóa học</a></li>
+						<li><a href="#">Courses</a></li>
 						
-						<li><a href="#">Lớp học</a></li>
+						<li><a href="#">Class</a></li>
 						
-						<li><a href="#">Học viên</a></li>
+						<li><a href="#">Student</a></li>
 					</ul>
 				</li>
 				
-				<li class="logout"><a href="#"><b>Đăng xuất</b></a></li>
+				<li class="logout"><a href="welcome.html"><b>Log Out</b></a></li>
 			</ul>
 		</div>
 		<div class="info_ ">
-			<div class="s_tittle"><i>Thông tin tài khoản</i></div>
-			<div class="ul_basic_info">
-				<div class="label_ul"><span class="label_list">Basic Infomation</span></div>
-				<ul class="ul_info">
-					<li class="li_username">
-						<div class="ul_info_1"><span class="label_info">Username</span></div>
-						<div class="ul_info_2">abc_123</div>
-					</li>
-					<li class="li_email">
-						<div class="ul_info_1"><span class="label_info">E-mail</span></div>
-						<div class="ul_info_2">sdfg@fgh.com</div>
-					</li>
-					<li class="li_Hoten">
-						<div class="ul_info_1"><span class="label_info">Họ tên</span></div>
-						<div class="ul_info_2">abc nguyen</div>
-					</li>
-					<li class="li_birth">
-						<div class="ul_info_1"><span class="label_info">Date of birth</span></div>
-						<div class="ul_info_2">10/10/2000</div>
-					</li>
-					<li class="li_gender">
-						<div class="ul_info_1"><span class="label_info">Gender</span></div>
-						<div class="ul_info_2">male</div>
-					</li>
-					<li class="li_addr">
-						<div class="ul_info_1"><span class="label_info">Address</span></div>
-						<div class="ul_info_2">50 bis hahaha hiihihih</div>
-					</li>
-					<li class="li_phone">
-						<div class="ul_info_1"><span class="label_info">Phone</span></div>
-						<div class="ul_info_2">0909009000</div>
-					</li>
-				</ul>
-			</div>
-			<div class="ul_info_4teacher">
-				<div class="label_ul"><span class="label_list">About Job</span></div>
-				<ul class="ul_info">
-					<li class="li_nvl">
-						<div class="ul_info_1"><span class="label_info">Ngày vào làm</span></div>
-						<div class="ul_info_2">30/10/2018</div>
-					</li>
-					<li class="li_achievement">
-						<div class="ul_info_1"><span class="label_info">Chứng chỉ</span></div>
-						<div class="ul_info_2">IELTS 9.0; TOEIC 900</div>
-					</li>
-					
-				</ul>
-			</div>
-			<div class="ul_Login_activity">
-				<div class="label_ul"><span class="label_list">Login Activity</span></div>
-				<ul class="ul_info">
-					<li class="li_First">
-						<div class="ul_info_1"><span class="label_info">First access to site</span></div>
-						<div class="ul_info_2">30/10/2018, 6:30 AM</div>
-					</li>
-					<li class="li_Last">
-						<div class="ul_info_1"><span class="label_info">Last access to site</span></div>
-						<div class="ul_info_2">27/10/2019, 6:31 AM</div>
-					</li>
-					
-				</ul>
-			</div>
-			
+			<div class="s_tittle"><i>List</i></div>
+			<ul class="ch-grid">
+  			  <li>
+       			 <div class="ch-item ch-img-1">
+          			<div class="ch-info">
+               			 <a href="#"><h3>Courses</h3></a> 
+              			 <p> 4 levels </p>
+         			</div>
+       			 </div>
+   			  </li>
+   			  <li>
+       			 <div class="ch-item ch-img-2">
+        		    <div class="ch-info">
+               			 <a href="#"><h3>Class</h3></a>
+              			 <p> 8 classes </p>
+           			</div>
+       			 </div>
+   			  </li>
+  			  <li>
+       			 <div class="ch-item ch-img-3">
+         		    <div class="ch-info">
+            		     <a href="#"><h3>Teacher</h3></a>
+             		     <p> 10 teachers </p>
+           		 	</div>
+      			 </div>
+   			  </li>
+   			  <li>
+      			 <div class="ch-item ch-img-4">
+           			<div class="ch-info">
+               			 <a href="#"><h3>Student</h3></a>
+               			 <p> 160 students </p>
+           			</div>
+      			 </div>
+   			  </li>
+			</ul>
 		</div>
 	</div>
 	<footer>
