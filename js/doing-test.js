@@ -49,13 +49,17 @@ $(function()
      
   $form.on("submit", function(e) {
     e.preventDefault();
-
      var correct=0;
     $.each($(this).serializeArray(), function(index, value) {
       var check = value.name.match(/\d/)[0],
        $q = $("#q" + check);
       if (data[check].answer === value.value) {correct++;} 
       });
+      if (correct===0)
+      {
+        swal("Oh...no!", "Your correct answers: "+ correct + ". Try again!", "error");
+      }
+      else
         swal({
         title: "Sweet!",
         text: "Correct answers " + correct
