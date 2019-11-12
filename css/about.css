@@ -1,0 +1,21 @@
+header{
+    margin-bottom: 120px;
+}
+.content {
+    max-width: max-content;
+    padding: 10px;
+  border-radius: 20px;
+  margin-left: 70px;
+  color: black;
+  background: #FAEDDD ;
+  opacity: 0.8;
+}
+
+p {
+    padding: 0px 3px 3px 50px;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
