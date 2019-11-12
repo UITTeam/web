@@ -1,4 +1,3 @@
-
 .clearfix:before,  
 .clearfix:after {  
     content: " ";  
@@ -14,13 +13,9 @@
 .billboard{
     width: 100%;
     height: 690px;
-    position: relative;
 }
-.billboard.dark{
+.billboard .dark{
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 }
 
 .billboard .caption{
@@ -109,15 +104,9 @@
  		border-radius: 3px;
  		-webkit-transition: all 0.3s linear;
   		-moz-transition: all 0.3s linear;
- 		transition: all 0.3s linear;
+         transition: all 0.3s linear;
+         
 }
-body
-	{
-		background-repeat: no-repeat;
-		background-attachment:fixed;
-        font-family: Comic Sans MS;
-
-	}
 input
 {
 	margin: 10px;

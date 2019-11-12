@@ -15,24 +15,26 @@
 	<script type="text/javascript" src="js/home.js"></script>
 </head>
 <body>
-    <header>
-            <div class="banner">
-                    <img src="./img/banner.png">
-                    <h1 style="font-weight: bold;" >English Online</h1>
-                    <p>Hotline: 012345678 <br>Email: eng@gmail.com</p>
-                    <a id='btnLogin' href="" class="btn btn-outline-dark btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+    <header style="padding: 40px">
+            <div class="row banner">
+                    <div class="col-md-3"><img src="./img/banner.png"></div>
+                    <div class="col-md-7">
+                        <h1 >English Online</h1>
+                        <p>Hotline: 012345678 <br>Email: eng@gmail.com</p>
                     </div>
-                    <div  class=menu-1>
-                    <ul>
-                        <li class="home"><a href="./home.html">HOME</a></li>
-                        <li class="test" data-type="all"><a href="./test.html">TEST</a>
-                        </li>
-                        <li class="courses"><a href="#">COURSES</a>
-                            
-                        </li>
-                        <li class="about"><a href="#">ABOUT</a></li>
+                    <div class="col-md-2"><a id='btnLogin' href="" class="btn btn-outline-dark btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+                    </div></div>
+                        
+                </div>
+                <div class="row">
+                        <ul class='menu-1'>
+                            <li class="col-md-4"><a href="./home.html">HOME</a></li>
+                            <li class="col-md-4" data-type="all"><a href="./test.html">TEST</a>
+                            </li>
+                            <li class="col-md-4"><a href="#">COURSES</a></li>
+                            <li class="col-md-4"><a href="#">ABOUT</a></li>
                         </ul>
-                    </div>
+                </div>
     </header>
     <section class="billboard dark">
             <div class="caption dark animated wow fadeInDown " data-wow-delay=".4s">
