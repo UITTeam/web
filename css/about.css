@@ -3,12 +3,13 @@ header{
 }
 .content {
     max-width: max-content;
-    padding: 10px;
-  border-radius: 20px;
-  margin-left: 70px;
-  color: black;
-  background: #FAEDDD ;
-  opacity: 0.8;
+    padding: 30px;
+    
+    border-radius: 20px;
+    margin-left: 70px;
+    color: black;
+    background: #FAEDDD ;
+    opacity: 0.8;
 }
 
 p {
